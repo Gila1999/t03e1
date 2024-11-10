@@ -14,16 +14,7 @@
         <section>
             <h2>Títulos Nacionales</h2>
             <ul>
-                <li>1 Liga Española</li>
-                <li>5 Copas del Rey</li>
-                <li>1 Supercopa de España</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Títulos Internacionales</h2>
-            <ul>
-                <li>7 UEFA Europa League</li>
-                <li>1 Supercopa de la UEFA</li>
+                <li th:each="title : ${titles}" th:text="${title}"></li>
             </ul>
         </section>
         <section>
