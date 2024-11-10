@@ -20,10 +20,5 @@ public class pageController {
     @GetMapping("/galeria-fotos")
     public String showFotos() {
         return "photogalleryView";
-    }
-
-    @GetMapping("/enlaces")
-    public String showEnlaces() {
-        return "linksView";
-    }
+    }     
 }
