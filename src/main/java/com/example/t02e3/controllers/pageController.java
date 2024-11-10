@@ -7,23 +7,23 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class pageController {
     
-    @GetMapping("/")
+    @GetMapping({"/", "/index", "/home"})
     public String showHome(){
-        return "index";
+        return "indexView";
     }
 
     @GetMapping("/palmares")
     public String showPalmares() {
-        return "palmares";
+        return "palmaresView";
     }
 
     @GetMapping("/galeria-fotos")
     public String showFotos() {
-        return "galeria-fotos";
+        return "photogalleryView";
     }
 
     @GetMapping("/enlaces")
     public String showEnlaces() {
-        return "enlaces";
+        return "linksView";
     }
 }
